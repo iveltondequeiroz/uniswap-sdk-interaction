@@ -43,7 +43,8 @@ const init = async() => {
             amountOutMin,
             path,
             to,
-            deadline
+            deadline,
+            { value, gasPrice:20e9 }
         );
     
         console.log(`Transaction Hash: ${tx.hash}`);
